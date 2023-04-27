@@ -307,6 +307,9 @@
     margin: 66px 0px 61px;
     justify-content: space-between;
 }    
+.footer p {
+    margin-left: 231px;
+}
 .footer__link {
     display: inline;
     margin-right: 21px;
