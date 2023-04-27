@@ -1,0 +1,313 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 16px;
+    left: 1%;
+    z-index: 2;
+}
+.header ul li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-right: 35px;
+    color: #fff;
+}
+.header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+.nav__link_active {
+    border-bottom: 2px solid #fff;
+}
+.header__lng {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+}
+.header__lng_active a {
+    color: #B7B7B7 !important;
+}
+.header__lng span {
+    color: #fff;
+    margin-right: 8px;
+}
+.intro {
+    padding-left: 240px;
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.intro h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: white;
+    padding-top: 200px;
+    width: 80%;
+    margin-bottom: 53px;
+    text-align: left;
+}
+.intro button {
+    border: none;
+    color: #fff;
+    background-color: #db2512;
+    margin-bottom: 305px;
+    padding: 11px 48px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    cursor: pointer;
+}
+.intro__blocks {
+    display: flex;
+    gap: 21px;
+    position: absolute;
+    bottom: -12%;
+    left: 1.5%;
+}
+.intro__block {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    padding: 38px 48px 37px 39px;
+    min-width: 386px;
+    position: relative;
+}
+.intro__block p {
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    margin: 21px 0px 15px 0px;
+}
+.intro__block span {
+    font-weight: 400;
+    font-size: 18px;
+    color: #B7B7B7;
+}
+.intro__block::before {
+    content: "";
+    background-image: url(./images/phone.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10%;
+    left: 9%;
+}
+.intro__block-calendar::before {
+    content: "";
+    background-image: url(./images/calendar.svg);    
+}
+.intro__block-location::before {
+    content: "";
+    background-image: url(./images/location.svg);
+}
+.services {
+    text-transform: uppercase;
+    margin: 99px auto;
+}
+.services h2 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.services a {
+    font-weight: 400;
+    font-size: 15px;
+}
+.services__blocks {
+    display: flex;
+    gap: 20px;
+    margin-top: 60px;
+}
+.service__block {
+    position: relative;
+}
+.overlay {
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 93%;
+}
+.service__block:hover .overlay{
+    display: block;
+}
+.service__block:hover::before {
+    content: url("./images/plus.png");
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.service__block:hover::after {
+    content: "ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH";
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    z-index: 2;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+.about {
+    background-color: #171616;
+}
+.about__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 117px 0px;
+}
+.about__info {
+    line-height: 150%;
+}
+.about__info h2 {
+    color: white !important;
+    width: 70%;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    margin-bottom: 42px;
+}
+.about__info p {
+    color: #b7b7b7;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.23em;
+    margin-bottom: 48px;
+    width: 70%;
+}
+.about__info a {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    width: 70%;
+    text-transform: uppercase;
+}
+.process {
+    padding: 99px 0;
+    text-align: center;
+}
+.process h2 {
+    font-weight: 900;
+    font-size: 148px;
+    margin-bottom: 58px;
+}
+.process p {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.process__blocks {
+    display: flex;
+    gap: 19px;
+    margin-top: 92px;
+}
+.process__block {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    line-height: 150%;
+    padding: 31px 24px 26px 30px;
+    min-width: 386px;
+    text-align: left;
+}
+.process__block p {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.process__block span {
+    font-weight: 400;
+    font-size: 18px;
+    color: #B7B7B7;
+}
+.contact {
+    background-color: #171616;
+}
+.contact h2 {
+    color: #fff;
+    padding-top: 92px;
+    padding-bottom: 47px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.contact__inputs {
+    display: block;
+    float: left;
+    column-count: 2;
+    background-color: #171616;
+}
+.contact__input {
+    background-color: #171616;
+    margin-bottom: 45px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    width: 50%;
+}
+.contact b {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.15em; 
+}
+.contact button {
+    background-color: #DB2512;
+    padding: 12px 76px;
+    margin: 48px 0px 90px 0px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.footer {
+    display: flex;
+    margin: 66px 0px 61px;
+    justify-content: space-between;
+}    
+.footer__link {
+    display: inline;
+    margin-right: 21px;
+}
