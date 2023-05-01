@@ -18,7 +18,7 @@
     align-items: center;
     position: absolute;
     top: 16px;
-    left: 10%;
+    left: 18%;
     z-index: 2;
 }
 .header ul li {
@@ -85,7 +85,7 @@
     gap: 21px;
     position: absolute;
     bottom: -12%;
-    left: 10%;
+    left: 17.5%;
 }
 .intro__block {
     background: #FFFFFF;
